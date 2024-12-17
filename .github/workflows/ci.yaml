@@ -15,10 +15,9 @@ jobs:
 
         steps:
             - name: Checkout source code
-              uses: actions/checkout@v4]
+              uses: actions/checkout@v4
             
             - name: Setup NOdeJs
               uses: actions/setup-node@v4
               with:
                 node-version: '22'
-                cache: 'yarn'
