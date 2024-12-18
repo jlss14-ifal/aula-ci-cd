@@ -36,4 +36,4 @@ jobs:
               run: yarn test
 
             - name: Build Docker Image
-              run: docker build -t aula-ci-cd:latest
+              run: docker build -t aula-ci-cd:latest .
