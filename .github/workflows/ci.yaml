@@ -42,4 +42,10 @@ jobs:
                 password: ${{ secrets.DOCKERHUB_TOKEN }}
 
             - name: Build Docker Image
+              run: docker build -t jlss14/aula_docker_devops:latest .
+
+            - name: Push Docker Image to DockerHub
+              run: docker push jlss14/aula_docker_devops:latest
+
+            - name: Build Docker Image
               run: docker build -t aula-ci-cd:latest .
