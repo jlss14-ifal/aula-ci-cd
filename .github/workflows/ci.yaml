@@ -63,7 +63,7 @@ jobs:
       runs-on: ubuntu-latest
       needs: build
 
-      setps:
+      steps:
         - name: Checkout source code
           uses: actions/checkout@v4
 
